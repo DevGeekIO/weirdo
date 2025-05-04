@@ -1,0 +1,98 @@
+/* style.css */
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(45deg, #ff8a00, #e52e71);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.answer-btn {
+  background-color: #ffffff20;
+  color: white;
+  border: 2px dashed white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.answer-btn:hover {
+  background-color: #ffffff40;
+  transform: scale(1.05);
+}
+
+#next-btn, button {
+  margin-top: 20px;
+  background: #fff;
+  color: #222;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#result {
+  margin-top: 40px;
+  background: #ffffff10;
+  padding: 20px;
+  border-radius: 20px;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.share-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .share-buttons button,
+  .share-buttons a {
+    background-color: #fff;
+    color: #222;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+  
+  .share-buttons button:hover,
+  .share-buttons a:hover {
+    background-color: #ddd;
+  }
+  

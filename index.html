@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How Weird Are You?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 How Weird Are You?</h1>
+    
+    <div id="quiz-container"></div>
+    
+    <button id="next-btn">Next</button>
+    <div id="result" class="hidden">
+      <h2 id="weird-score"></h2>
+      <p id="bad-advice"></p>
+      <button onclick="window.location.reload()">Try Again</button>
+      <div class="share-buttons">
+        <button id="copy-btn">📋 Copy Result</button>
+        <a id="twitter-share" target="_blank">🐦 Share on Twitter</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
